@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -6,9 +7,9 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';           // import of card and nav bar from bootstrap
 
 function BasicExample() {
-  return (                    // coding the nav bar & card from bootstrap     
+  return (                    // coding the nav bar & cards from bootstrap     
     <>                         
-    <Navbar expand="lg" className="bg-body-tertiary">   the nav bar 
+    <Navbar expand="lg" className="bg-body-tertiary">   
       <Container>
         <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -31,8 +32,31 @@ function BasicExample() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+<h1>HELLO WORLD THIS IS A HEADING!!!!!!!!!!</h1>
 
-
+    <Card style={{ width: '18rem' }}>               
+      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+    </Card>
+    <Card style={{ width: '18rem' }}>
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+        <Card.Link href="#">Card Link</Card.Link>
+        <Card.Link href="#">Another Link</Card.Link>
+      </Card.Body>
+    </Card>
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src="holder.js/100px180" />
       <Card.Body>
@@ -44,7 +68,6 @@ function BasicExample() {
         <Button variant="primary">Go somewhere</Button>
       </Card.Body>
     </Card>
-
     </>
   );
 }
